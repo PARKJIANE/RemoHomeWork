@@ -1,0 +1,28 @@
+{
+  "name": "testexample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "nyc --reporter=html mocha --paths ./**/**/*.spec.js --exit",
+    "lint": "eslint . --fix --ext .js --exit-on-fatal-error",
+    "fix": "prettier --write ./",
+    "start": "node index"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.7.1",
+    "sinon": "^14.0.0"
+  }
+}

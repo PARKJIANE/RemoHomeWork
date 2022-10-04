@@ -1,0 +1,56 @@
+Arguments: 
+  /Users/kimjiwoon/.nvm/versions/node/v16.15.1/bin/node /Users/kimjiwoon/.nvm/versions/node/v16.15.1/bin/yarn install
+
+PATH: 
+  /Users/kimjiwoon/.nvm/versions/node/v16.15.1/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kimjiwoon/WebstormProjects/testexample/node_modules/.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/kimjiwoon/WebstormProjects/testexample/package.json: Unexpected token } in JSON at position 274
+      at JSON.parse (<anonymous>)
+      at /Users/kimjiwoon/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/kimjiwoon/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/kimjiwoon/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "testexample",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "engines": {
+      "npm": ">=7.0.0",
+      "node": ">=14.0.0"
+    },
+    "scripts": {
+      "test": "nyc --reporter=html mocha --paths ./**/**/*.spec.js --exit",
+      "start": "node index",
+    },
+    "devDependencies": {
+      "chai": "^4.3.6",
+      "eslint": "^8.0.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "mocha": "^10.0.0",
+      "nyc": "^15.1.0",
+      "prettier": "^2.7.1",
+      "sinon": "^14.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
