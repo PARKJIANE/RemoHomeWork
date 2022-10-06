@@ -46,7 +46,7 @@ describe("테스트 작성 예", () => {
                 isThrowError = error;
             }
             expect(isThrowError).to.be.not.a("undefined");
-            expect(isThrowError.message).to.be.equals("둘다 마이너스");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         })
 
@@ -86,8 +86,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
-            expect(isThrowError).to.be.is.not.a("undefined");
-            expect(isThrowError.message).to.be.equals("둘다 마이너스");
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
 
     })
@@ -127,8 +127,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
-            expect(isThrowError).to.be.is.not.a("undefined");
-            expect(isThrowError.message).to.be.equals("둘다 마이너스");
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
 
     })
@@ -168,6 +168,6 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
-            expect(isThrowError).to.be.is.not.a("undefined");
-            expect(isThrowError.message).to.be.equals("둘다 마이너스");
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
