@@ -150,7 +150,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        })
+        
         it("should throw error by b param",()=>{
             let isThrowError;
             try{
@@ -171,3 +171,4 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
+    })
