@@ -21,7 +21,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a param",()=>{
             let isThrowError;
             try{
-                sum();
+                sum(a = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -31,7 +31,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by b param",()=>{
             let isThrowError;
             try{
-                sum();
+                sum(b = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -41,7 +41,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&b param",()=>{
             let isThrowError;
             try{
-                sum();
+                sum(a&b == undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -62,7 +62,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a param",()=>{
             let isThrowError;
             try{
-                sub();
+                sub(a = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -72,7 +72,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by b param",()=>{
             let isThrowError;
             try{
-                sub();
+                sub(b = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -82,7 +82,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&b param",()=>{
             let isThrowError;
             try{
-                sub();
+                sub(a&b == undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -103,7 +103,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a param",()=>{
             let isThrowError;
             try{
-                div();
+                div(a = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -113,7 +113,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by b param",()=>{
             let isThrowError;
             try{
-                div();
+                div(b = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -123,7 +123,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&b param",()=>{
             let isThrowError;
             try{
-                div();
+                div(a&b == undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -143,7 +143,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a param",()=>{
             let isThrowError;
             try{
-                mul();
+                mul(a = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -154,7 +154,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by b param",()=>{
             let isThrowError;
             try{
-                mul();
+                mul(b = undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -164,7 +164,7 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&b param",()=>{
             let isThrowError;
             try{
-                mul();
+                mul(a&b == undefined);
             }catch(error) {
                 isThrowError = error;
             }
