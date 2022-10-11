@@ -1,6 +1,7 @@
 const exampleFunction = () => {
     return true;
 }
+
 const sum = (a, b) => {
     if(a === undefined || b === undefined ){
         throw new Error("둘중에 하나 언디파인"); 
@@ -38,6 +39,7 @@ const mul = (a, b) => {
     if(b < 0) throw new Error("비허용된 마이너스 파라미터");
     return a*b;
 }
+
 exports.sum = sum;
 exports.sub = sub;
 exports.div = div;
