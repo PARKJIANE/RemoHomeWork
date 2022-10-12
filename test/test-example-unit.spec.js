@@ -33,7 +33,7 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sum(b);
+                sum(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -43,10 +43,9 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
-            let c=a<0 && b<0;
             let isThrowError;
             try{
-                sum(c);
+                sum(undefined,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -79,7 +78,7 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sub(b);
+                sub(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -89,10 +88,9 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
-            let c=a<0 && b<0;
             let isThrowError;
             try{
-                sub(c);
+                sub(undefined,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -123,7 +121,7 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                div(b);
+                div(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -133,10 +131,9 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
-            let c=a<0 && b<0;
             let isThrowError;
             try{
-                div(c);
+                div(undefined,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -167,7 +164,7 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                mul(b);
+                mul(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -177,10 +174,9 @@ describe("테스트 작성 예", () => {
         it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
-            let c=a<0 && b<0;
             let isThrowError;
             try{
-                mul(c);
+                mul(undefined,undefined);
             }catch(error) {
                 isThrowError = error;
             }
