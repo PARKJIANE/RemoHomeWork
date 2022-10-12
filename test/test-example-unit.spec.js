@@ -64,7 +64,7 @@ describe("테스트 작성 예", () => {
             const result = sub(aParam, bParam);
             expect(result).to.be.equals(expectResult);
         })
-        it("should throw error by a param",()=>{
+        it("should throw error by aparam",()=>{
             const a=1;
             let isThrowError;
             try{
@@ -75,7 +75,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by b param",()=>{
+        it("should throw error by bparam",()=>{
             const b=1;
             let isThrowError;
             try{
@@ -86,7 +86,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by a&b param",()=>{
+        it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
             let c=a<0 && b<0;
@@ -108,7 +108,7 @@ describe("테스트 작성 예", () => {
             const result = div(aParam, bParam);
             expect(result).to.be.equals(expectResult);
         })
-        it("should throw error by a param",()=>{
+        it("should throw error by aparam",()=>{
             const a=1;
             let isThrowError;
             try{
@@ -119,7 +119,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by b param",()=>{
+        it("should throw error by bparam",()=>{
             const b=1;
             let isThrowError;
             try{
@@ -130,7 +130,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by a&b param",()=>{
+        it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
             let c=a<0 && b<0;
@@ -152,7 +152,7 @@ describe("테스트 작성 예", () => {
             const result = mul(aParam, bParam);
             expect(result).to.be.equals(expectResult);
         })
-        it("should throw error by a param",()=>{
+        it("should throw error by aparam",()=>{
             const a=1;
             let isThrowError;
             try{
@@ -163,7 +163,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by b param",()=>{
+        it("should throw error by bparam",()=>{
             const b=1;
             let isThrowError;
             try{
@@ -174,7 +174,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
-        it("should throw error by a&b param",()=>{
+        it("should throw error by a&bparam",()=>{
             const a=1;
             const b=1;
             let c=a<0 && b<0;
