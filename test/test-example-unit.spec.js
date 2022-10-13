@@ -20,20 +20,24 @@ describe("테스트 작성 예", () => {
         })
         it("should throw error by aparam",()=>{
             const a=1;
+            const b=1;
             let isThrowError;
             try{
-                sum(a);
+                sum(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
+            console.log(a);
+            console.log(b);
         })
         it("should throw error by bparam",()=>{
+            const a=1;
             const b=1;
             let isThrowError;
             try{
-                sum(undefined,b);
+                sum(a,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -53,7 +57,6 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         })
-
     })
     describe("subtract function spec", () => {
         it('1-1 = 0', () => {
@@ -65,9 +68,10 @@ describe("테스트 작성 예", () => {
         })
         it("should throw error by aparam",()=>{
             const a=1;
+            const b=1;
             let isThrowError;
             try{
-                sub(a);
+                sub(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -75,10 +79,11 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
+            const a=1;
             const b=1;
             let isThrowError;
             try{
-                sub(undefined,b);
+                sub(a,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -108,9 +113,10 @@ describe("테스트 작성 예", () => {
         })
         it("should throw error by aparam",()=>{
             const a=1;
+            const b=1;
             let isThrowError;
             try{
-                div(a);
+                div(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -118,10 +124,11 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
+            const a=1;
             const b=1;
             let isThrowError;
             try{
-                div(undefined,b);
+                div(a,undefined);
             }catch(error) {
                 isThrowError = error;
             }
@@ -151,9 +158,10 @@ describe("테스트 작성 예", () => {
         })
         it("should throw error by aparam",()=>{
             const a=1;
+            const b=1;
             let isThrowError;
             try{
-                mul(a);
+                mul(undefined,b);
             }catch(error) {
                 isThrowError = error;
             }
@@ -161,10 +169,11 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
+            const a=1;
             const b=1;
             let isThrowError;
             try{
-                mul(undefined,b);
+                mul(a,undefined);
             }catch(error) {
                 isThrowError = error;
             }
