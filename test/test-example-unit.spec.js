@@ -29,8 +29,6 @@ describe("테스트 작성 예", () => {
             }
             expect(isThrowError).to.be.not.a("undefined");
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
-            console.log(a);
-            console.log(b);
         })
         it("should throw error by bparam",()=>{
             const a=1;
