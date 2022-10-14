@@ -10,33 +10,26 @@ function validation(a,b) {
     if(a < 0) throw new Error("비허용된 마이너스 파라미터"); 
     if(b < 0) throw new Error("비허용된 마이너스 파라미터");
 }
+
 const sum = (a,b) => {
     validation(a,b);
     if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
     return a+b;
+
 }
 
-function validation() {
-    const sub=a-b;
-}
 const sub = (a,b) => {
     validation(a,b);
     if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
     return a-b;
 }
  
-function validation() {
-    const div=a/b;
-}
 const div = (a,b) => {
     validation(a,b);
     if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
     return a/b;
 } 
 
-function validation() {
-    const mul=a*b;
-}
 const mul = (a,b) => {
     validation(a,b);   
     if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
