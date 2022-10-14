@@ -1,7 +1,6 @@
 const exampleFunction = () => {
     return true;
 }
-
 const sum = (a, b) => {
     if(a === undefined || b === undefined ){
         throw new Error("둘중에 하나 언디파인"); 

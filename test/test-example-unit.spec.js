@@ -15,7 +15,7 @@ describe("테스트 작성 예", () => {
             const aParam = 1;
             const bParam = 1;
             const expectResult = 2;
-            const result = sum(aParam, bParam);
+            const result = (aParam, bParam);
             expect(result).to.be.equals(expectResult);
         })
         it("should throw error by aparam",()=>{
