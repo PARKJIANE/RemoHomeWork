@@ -13,25 +13,25 @@ function validation(a,b) {
 
 const sum = (a,b) => {
     validation(a,b);
-    if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
+    if(parseInt(a,10) > 0 && parseInt(b,10) > 0);
     return a+b;
 }
 
 const sub = (a,b) => {
     validation(a,b);
-    if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
+    if(parseInt(a,10) > 0 && parseInt(b,10) > 0);
     return a-b;
 }
  
 const div = (a,b) => {
     validation(a,b);
-    if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
+    if(parseInt(a,10) > 0 && parseInt(b,10) > 0);
     return a/b;
 } 
 
 const mul = (a,b) => {
     validation(a,b);   
-    if(parseInt(a,10) > 0 && parseInt(a,10) > 0);
+    if(parseInt(a,10) > 0 && parseInt(b,10) > 0);
     return a*b;
 }
 
