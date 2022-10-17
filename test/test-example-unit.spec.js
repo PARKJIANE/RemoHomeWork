@@ -71,7 +71,6 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         })
-    
     describe("subtract function spec", () => {
         it('1-1 = 0', () => {
             const aParam = 1;
