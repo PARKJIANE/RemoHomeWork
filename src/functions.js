@@ -30,7 +30,7 @@ const mul = (a,b) => {
     validation(a,b);   
     return a*b;
 }
-
+exports.validation=validation;
 exports.sum = sum;
 exports.sub = sub;
 exports.div = div;
