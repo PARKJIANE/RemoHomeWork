@@ -24,11 +24,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sum(undefined,b);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,b);
             }catch(error) {
                 isThrowError=error;
@@ -40,11 +35,6 @@ describe("테스트 작성 예", () => {
             const a=1;
             const b=1;
             let isThrowError;
-            try{
-                sum(a,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
             try{
                 validation(a,undefined);
             }catch(error) {
@@ -58,11 +48,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sum(undefined,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,undefined);
             }catch(error) {
                 isThrowError=error;
@@ -71,7 +56,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         })
-    describe("subtract function spec", () => {
+    describe("validation function spec", () => {
         it('1-1 = 0', () => {
             const aParam = 1;
             const bParam = 1;
@@ -84,11 +69,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sub(undefined,b);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,b);
             }catch(error) {
                 isThrowError=error;
@@ -100,11 +80,6 @@ describe("테스트 작성 예", () => {
             const a=1;
             const b=1;
             let isThrowError;
-            try{
-                sub(a,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
             try{
                 validation(a,undefined);
             }catch(error) {
@@ -118,11 +93,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                sub(undefined,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,undefined);
             }catch(error) {
                 isThrowError=error;
@@ -131,7 +101,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
     })
-    describe(" divide function spec", () => {
+    describe("validation function spec", () => {
         it('1/1 = 1', () => {
             const aParam = 1;
             const bParam = 1;
@@ -144,11 +114,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                div(undefined,b);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,b);
             }catch(error) {
                 isThrowError=error;
@@ -160,11 +125,6 @@ describe("테스트 작성 예", () => {
             const a=1;
             const b=1;
             let isThrowError;
-            try{
-                div(a,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
             try{
                 validation(a,undefined);
             }catch(error) {
@@ -178,11 +138,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                div(undefined,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,undefined);
             }catch(error) {
                 isThrowError=error;
@@ -191,7 +146,7 @@ describe("테스트 작성 예", () => {
             expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
     })
-    describe("multiply function spec", () => {
+    describe("validation function spec", () => {
         it('1*1 = 1', () => {
             const aParam = 1;
             const bParam = 1;
@@ -204,11 +159,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                mul(undefined,b);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(undefined,b);
             }catch(error) {
                 isThrowError=error;
@@ -221,11 +171,6 @@ describe("테스트 작성 예", () => {
             const b=1;
             let isThrowError;
             try{
-                mul(a,undefined);
-            }catch(error) {
-                isThrowError = error;
-            }
-            try{
                 validation(a,undefined);
             }catch(error) {
                 isThrowError=error;
@@ -237,11 +182,6 @@ describe("테스트 작성 예", () => {
             const a=1;
             const b=1;
             let isThrowError;
-            try{
-                mul(undefined,undefined);
-            }catch(error) {
-                isThrowError=error;
-            }
             try{
                 validation(undefined,undefined);
             }catch(error) {
