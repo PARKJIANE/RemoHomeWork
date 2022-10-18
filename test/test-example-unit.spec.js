@@ -1,6 +1,6 @@
 const {expect} = require("chai");
 const { it } = require("mocha");
-const {exampleFunction, validation, sum, sub, div, mul} = require("../src/functions");
+const {exampleFunction, sum, sub, div, mul} = require("../src/functions");
 describe("테스트 작성 예", () => {
     before(() =>{})
     after(() =>{})
@@ -28,6 +28,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
             const a=1;
@@ -38,6 +40,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by a&bparam",()=>{
             const a=1;
@@ -48,6 +52,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         })
     describe("subtract function spec", () => {
@@ -67,6 +73,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
             const a=1;
@@ -77,6 +85,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by a&bparam",()=>{
             const a=1;
@@ -87,6 +97,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
     })
     describe(" divide function spec", () => {
@@ -106,6 +118,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
             const a=1;
@@ -116,6 +130,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by a&bparam",()=>{
             const a=1;
@@ -126,6 +142,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
     })
     describe("multiply function spec", () => {
@@ -145,6 +163,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by bparam",()=>{
             const a=1;
@@ -155,6 +175,8 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError = error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
         it("should throw error by a&bparam",()=>{
             const a=1;
@@ -165,5 +187,7 @@ describe("테스트 작성 예", () => {
             }catch(error) {
                 isThrowError=error;
             }
+            expect(isThrowError).to.be.not.a("undefined");
+            expect(isThrowError.message).to.be.equals("둘중에 하나 언디파인");
         })
     })
